@@ -17,7 +17,7 @@
 
 			 <div class="box">
 				<div class="box-header with-border">
-				  <h3 class="box-title">User Listdasdasdas</h3>
+				  <h3 class="box-title">User </h3>
 	<a href="{{ route('users.add') }}" style="float: right;" class="btn btn-rounded btn-success mb-5"> Add User</a>			  
 
 				</div>
