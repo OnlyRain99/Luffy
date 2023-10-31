@@ -21,6 +21,7 @@
 				<div class="col">
 
 	 <form method="post" action="{{ route('password.update') }}">
+		
 	 @csrf
 					  <div class="row">
 						<div class="col-12">	
