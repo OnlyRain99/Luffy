@@ -5,6 +5,7 @@
  @endphp
 
 
+
  <aside class="main-sidebar">
     <!-- sidebar-->
     <section class="sidebar"> 
@@ -24,7 +25,7 @@
       <!-- sidebar menu-->
       <ul class="sidebar-menu" data-widget="tree">  
       
-    <li class="{{ ($route == 'dashboard')?'active':'' }}" >
+    <li class="active" >
           <a href="{{ route('dashboard') }}">
             <i data-feather="pie-chart"></i>
       <span>Dashboard</span>
@@ -72,7 +73,7 @@
           </a>
           <ul class="treeview-menu">
         <li><a href="{{ route('profile.view') }}"><i class="ti-more"></i>Your Profile</a></li>
-        <li><a href=""><i class="ti-more"></i>Change Password</a></li>
+        <li><a href="{{ route('password.view') }}"><i class="ti-more"></i>Change Password</a></li>
             
           </ul>
         </li>
