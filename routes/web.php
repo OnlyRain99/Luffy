@@ -6,6 +6,7 @@ use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\Setup\StudentClassController;
 use App\Http\Controllers\Backend\Setup\StudentYearController;
+use App\Http\Controllers\Backend\Setup\StudentGroupController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -72,6 +73,9 @@ Route::prefix('setups')->group(function(){
     Route::get('student/year/edit/{id}', [StudentYearController::class, 'StudentYearEdit'])->name('student.year.edit');
     Route::post('student/year/update/{id}', [StudentYearController::class, 'StudentYearUpdate'])->name('update.student.year');
     Route::get('student/year/delete/{id}', [StudentYearController::class, 'StudentYearDelete'])->name('student.year.delete');
+
+    //stud group
+    Route::get('student/group/view', [StudentGroupController::class, 'ViewGroup'])->name('student.group.view');
 });
 
 
