@@ -25,7 +25,7 @@
       <!-- sidebar menu-->
       <ul class="sidebar-menu" data-widget="tree">  
       
-    <li class="active" >
+    <li class="" >
           <a href="{{ route('dashboard') }}">
             <i data-feather="pie-chart"></i>
       <span>Dashboard</span>
@@ -33,7 +33,7 @@
         </li>  
     
     
-        <li class="treeview {{ ($prefix == '/users')?'active':'' }}" >
+        <li class="treeview " >
           <a href="#">
             <i data-feather="message-circle"></i>
             <span>Manage User</span>
@@ -81,7 +81,7 @@
         
 
 
-<li class="treeview {{ ($prefix == '/setups')?'active':'' }} ">
+<li class="treeview {{ ($prefix == '/setups')?'':'' }} ">
           <a href="#">
             <i data-feather="mail"></i> <span>Setup Management</span>
             <span class="pull-right-container">

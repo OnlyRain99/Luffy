@@ -39,8 +39,8 @@
 				<td>{{ $key+1 }}</td>
 				<td> {{ $group->name }}</td>				 
 				<td>
-<a href="" class="btn btn-info">Edit</a>
-<a href="" class="btn btn-danger" id="delete">Delete</a>
+<a href="{{ route('student.group.edit',$group->id) }}" class="btn btn-info">Edit</a>
+<a href="{{ route('student.group.delete',$group->id) }}" class="btn btn-danger" id="delete">Delete</a>
 <a href="" style="float: right;" class="btn btn-rounded btn-success mb-5">+</a>			  
 
 				</td>

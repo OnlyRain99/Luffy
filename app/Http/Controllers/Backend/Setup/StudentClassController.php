@@ -62,7 +62,7 @@ class StudentClassController extends Controller
         return redirect()->route('student.class.view')->with($notification);
     }
 
-    public function StudentClassDelete(){
+    public function StudentClassDelete($id){
         $user = StudentClass::find($id);
         $user->delete();
 
