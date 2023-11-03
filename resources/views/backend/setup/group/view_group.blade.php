@@ -17,8 +17,8 @@
 
 			 <div class="box">
 				<div class="box-header with-border">
-				  <h3 class="box-title">Student Group List</h3>
-	<a href="{{ route('student.year.add') }}" style="float: right;" class="btn btn-rounded btn-success mb-5"> Add Student Group</a>			  
+				  <h3 class="box-title">Student Subject List</h3>
+	<a href="{{ route('student.group.add') }}" style="float: right;" class="btn btn-rounded btn-success mb-5"> Add Student Group</a>			  
 
 				</div>
 				<!-- /.box-header -->
@@ -34,13 +34,14 @@
 			</tr>
 		</thead>
 		<tbody>
-			@foreach($allData as $key => $year )
+			@foreach($allData as $key => $group )
 			<tr>
 				<td>{{ $key+1 }}</td>
 				<td> {{ $group->name }}</td>				 
 				<td>
 <a href="" class="btn btn-info">Edit</a>
 <a href="" class="btn btn-danger" id="delete">Delete</a>
+<a href="" style="float: right;" class="btn btn-rounded btn-success mb-5">+</a>			  
 
 				</td>
 				 
