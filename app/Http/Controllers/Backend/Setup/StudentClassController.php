@@ -70,6 +70,6 @@ class StudentClassController extends Controller
             'message' => 'Student Class Delete Successfully',
             'alert-type'=>'info'
         );
-        return redirect()->route('student.class.view')->view($notification);
+        return redirect()->route('student.class.view')->with($notification);
     }
 }

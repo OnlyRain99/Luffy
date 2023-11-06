@@ -65,6 +65,6 @@ class StudentGroupController extends Controller
             'message' => 'Student Subject Delete Successfully',
             'alert-type'=>'info'
         );
-        return redirect()->route('student.group.view')->view($notification);
+        return redirect()->route('student.group.view')->with($notification);
     }
 }
