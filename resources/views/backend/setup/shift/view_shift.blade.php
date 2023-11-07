@@ -39,9 +39,8 @@
 				<td>{{ $key+1 }}</td>
 				<td> {{ $shift->name }}</td>				 
 				<td>
-<a href="" class="btn btn-info">Edit</a>
-<a href="" class="btn btn-danger" id="delete">Delete</a>
-
+<a href="{{ route('student.shift.edit',$shift->id)}}" class="btn btn-info">Edit</a>
+<a href="{{ route('student.shift.delete',$shift->id)}}" class="btn btn-danger" id="delete">Delete</a>
 				</td>
 				 
 			</tr>
