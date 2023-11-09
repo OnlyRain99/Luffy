@@ -18,7 +18,7 @@
 			 <div class="box">
 				<div class="box-header with-border">
 				  <h3 class="box-title">Student Fee Category</h3>
-	<a href="{{ route('student.group.add') }}" style="float: right;" class="btn btn-rounded btn-success mb-5"> Add fee Category</a>			  
+	<a href="{{ route('fee.category.add') }}" style="float: right;" class="btn btn-rounded btn-success mb-5"> Add fee Category</a>			  
 
 				</div>
 				<!-- /.box-header -->
@@ -39,8 +39,8 @@
 				<td>{{ $key+1 }}</td>
 				<td> {{ $fee->name }}</td>				 
 				<td>
-<a href="{{ route('student.group.edit',$group->id) }}" class="btn btn-info">Edit</a>
-<a href="{{ route('student.group.delete',$group->id) }}" class="btn btn-danger" id="delete">Delete</a>
+<a href="" class="btn btn-info">Edit</a>
+<a href="" class="btn btn-danger" id="delete">Delete</a>
 <a href="" style="float: right;" class="btn btn-rounded btn-success mb-5">+</a>			  
 
 				</td>
